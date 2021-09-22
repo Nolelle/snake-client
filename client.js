@@ -13,6 +13,9 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Sucessfully connected to game server");
     conn.write("Name: ECY");
+    setInterval(() => {
+      conn.write("");
+    }, 1000);
   });
 
   // interpret incoming data as text
