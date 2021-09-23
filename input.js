@@ -19,6 +19,12 @@ const setupInput = function (conn) {
       connection.write("Move: down");
     } else if (data === "d") {
       connection.write("Move: right");
+    } else if (data === "q") {
+      connection.write("Say: Pepehands");
+    } else if (data === "e") {
+      connection.write("Say: Sadge");
+    } else if (data === "r") {
+      connection.write("Say: widePeepoHappy");
     }
   };
   stdin.on("data", handleUserInput);
@@ -26,8 +32,3 @@ const setupInput = function (conn) {
 };
 
 module.exports = { setupInput };
-
-//w	87
-//a	65
-//s 83
-//d 68
